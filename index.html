@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afolayan Temidayo· frontend developer</title>
+    <!-- Google Fonts & Font Awesome for icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sticky header with color change (JS) -->
+    <header id="main-header">
+        <nav class="navbar container">
+            <div class="logo">Afolayan Tmidayo.B</div>
+            <!-- desktop menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- hamburger (mobile) -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button id="darkModeToggle">🌙  </button>
+        </nav>
+        
+    </header>
+
+    <main>
+        <!-- HERO / HOME section -->
+        <section id="home" class="hero section">
+            <div class="container hero-content fade-in-slide">
+                <h1>Afolayan Temidayo</h1>
+                <p class="tagline">Frontend Developer · HTML, CSS, JS</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">View My Work <i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title slide-up">about me</h2>
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <p>I'm Dayo, a minimalist frontend developer who loves turning ideas into clean, responsive interfaces. With a sharp eye for detail and a passion for micro‑interactions, I build websites that feel alive. Outside of coding, I explore UI animations and contribute to open source.</p>
+                    </div>
+                    <!-- profilE placeholder with fade effect -->
+                    <div class="profile-img-wrapper fade-in">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23b9d8f0' /%3E%3Ccircle cx='35' cy='40' r='5' fill='%232d4052' /%3E%3Ccircle cx='65' cy='40' r='5' fill='%232d4052' /%3E%3Cpath d='M35 65 Q50 75,65 65' stroke='%232d4052' stroke-width='4' fill='none' stroke-linecap='round' /%3E%3C/svg%3E"
+                             alt="profile avatar" class="profile-img">
+                    </div>
+                </div>
+                <!-- skill bars with animated counters -->
+                <div class="skill-bars-container slide-up">
+                    <div class="skill-item">
+                        <span class="skill-label">HTML</span>
+                        <div class="bar-bg"><div class="bar-fill html-bar" data-width="90">90%</div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">CSS</span>
+                        <div class="bar-bg"><div class="bar-fill css-bar" data-width="80">80%</div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">JavaScript</span>
+                        <div class="bar-bg"><div class="bar-fill js-bar" data-width="40">40%</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS section (grid cards) -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title slide-up">selected projects</h2>
+                <div class="projects-grid">
+                    <!-- card 1 -->
+                    <div class="project-card zoom-hover">
+                        <div class="card-content">
+                            <h3>weather flow</h3>
+                            <p>Minimal weather app with live API data, animated icons and 5‑day forecast.</p>
+                            <div class="tech-tags">HTML · CSS · JS · API</div>
+                            <div class="card-links">
+                                <a href="#" class="btn small-btn"><i class="fa-brands fa-github"></i> code</a>
+                                <a href="#" class="btn small-btn primary-btn">live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="project-card zoom-hover">
+                        <div class="card-content">
+                            <h3>TASKLY</h3>
+                            <p>Drag‑drop task manager with local storage, smooth animations, dark mode.</p>
+                            <div class="tech-tags">HTML · CSS · JS · localStorage</div>
+                            <div class="card-links">
+                                <a href="#" class="btn small-btn"><i class="fa-brands fa-github"></i> code</a>
+                                <a href="#" class="btn small-btn primary-btn">live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="project-card zoom-hover">
+                        <div class="card-content">
+                            <h3>CINEMA SCOPE</h3>
+                            <p>Movie discovery interface, grid layout, hover trailers (placeholder).</p>
+                            <div class="tech-tags">HTML · CSS · JS · API</div>
+                            <div class="card-links">
+                                <a href="#" class="btn small-btn"><i class="fa-brands fa-github"></i> code</a>
+                                <a href="#" class="btn small-btn primary-btn">live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="project-card zoom-hover">
+                        <div class="card-content">
+                            <h3><strong>PORTFOLIO 2024</strong></h3>
+                            <p>This very site! built with clean HTML/CSS/JS, fully responsive.</p>
+                            <div class="tech-tags">HTML · CSS · JS</div>
+                            <div class="card-links">
+                                <a href="#" class="btn small-btn"><i class="fa-brands fa-github"></i> code</a>
+                                <a href="#" class="btn small-btn primary-btn">live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS / TECH STACK (icons) -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title slide-up">tech stack</h2>
+                <div class="skills-icon-row">
+                    <div class="skill-icon-card pulse"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                    <div class="skill-icon-card pulse"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="skill-icon-card pulse"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT + FOOTER -->
+        <footer id="contact">
+            <div class="container">
+                <h2 class="section-title slide-up">get in touch</h2>
+                <div class="contact-form-container fade-in">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <p class="form-error" id="form-error"></p>
+                        <button type="submit" class="btn primary-btn submit-btn">Send message</button>
+                    </form>
+                </div>
+                <!-- social icons with hover animation -->
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-codepen"></i></a>
+                </div>
+                <!-- sticky footer copyright -->
+                <div class="copyright">© 2025 Afolayan Temidayo — built with HTML, CSS, JS</div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- back to top (extra) -->
+    <a href="#home" class="back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- external JS -->
+    <script src="script.js"></script>
+</body>
+</html>
